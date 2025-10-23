@@ -1,0 +1,22 @@
+[project]
+name = "weightedstates"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Uriah Finkel", email = "ufinkel@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+weightedstates = "weightedstates:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "quartodoc>=0.11.1",
+]
