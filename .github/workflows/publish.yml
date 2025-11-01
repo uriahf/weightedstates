@@ -24,3 +24,6 @@ jobs:
           path: docs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish package using uv
+        run: uv publish
